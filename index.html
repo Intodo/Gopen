@@ -10,7 +10,7 @@
             margin: 0;
             display: flex;
             justify-content: center;
-            align-items: flex-end; /* Elemente am unteren Bildschirmrand ausrichten */
+            align-items: flex-end;
         }
         form {
             width: 100%;
@@ -31,7 +31,9 @@
     </style>
     <script>
         window.onload = function() {
-            document.getElementById('search').focus();
+            var searchInput = document.getElementById('search');
+            searchInput.focus();  // Set focus to the search input field
+            searchInput.select(); // Ensure any placeholder text is selected and cleared
         };
     </script>
 </head>
